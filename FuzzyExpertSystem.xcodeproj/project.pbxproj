@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		667B869F294F56EC001E2D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667B869E294F56EC001E2D47 /* AppDelegate.swift */; };
+		667B86A1294F56EC001E2D47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667B86A0294F56EC001E2D47 /* SceneDelegate.swift */; };
+		667B86A3294F56EC001E2D47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667B86A2294F56EC001E2D47 /* ViewController.swift */; };
+		667B86A6294F56EC001E2D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667B86A4294F56EC001E2D47 /* Main.storyboard */; };
+		667B86A8294F56ED001E2D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667B86A7294F56ED001E2D47 /* Assets.xcassets */; };
+		667B86AB294F56ED001E2D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667B86A9294F56ED001E2D47 /* LaunchScreen.storyboard */; };
+		667B86B6294F56ED001E2D47 /* FuzzyExpertSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667B86B5294F56ED001E2D47 /* FuzzyExpertSystemTests.swift */; };
+		667B86C0294F56ED001E2D47 /* FuzzyExpertSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667B86BF294F56ED001E2D47 /* FuzzyExpertSystemUITests.swift */; };
+		667B86C2294F56ED001E2D47 /* FuzzyExpertSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667B86C1294F56ED001E2D47 /* FuzzyExpertSystemUITestsLaunchTests.swift */; };
+		667B86CF294F5726001E2D47 /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667B86CE294F5726001E2D47 /* Structures.swift */; };
+		667B86D1294F5761001E2D47 /* FuzzyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667B86D0294F5761001E2D47 /* FuzzyTableViewController.swift */; };
+		667B86D4294F5902001E2D47 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 667B86D3294F5902001E2D47 /* Realm */; };
+		667B86D6294F5902001E2D47 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 667B86D5294F5902001E2D47 /* RealmSwift */; };
+		667B86D8294F991A001E2D47 /* FuzzyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667B86D7294F991A001E2D47 /* FuzzyCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		667B86B2294F56ED001E2D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667B8693294F56EC001E2D47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 667B869A294F56EC001E2D47;
+			remoteInfo = FuzzyExpertSystem;
+		};
+		667B86BC294F56ED001E2D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667B8693294F56EC001E2D47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 667B869A294F56EC001E2D47;
+			remoteInfo = FuzzyExpertSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		667B869B294F56EC001E2D47 /* FuzzyExpertSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuzzyExpertSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		667B869E294F56EC001E2D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		667B86A0294F56EC001E2D47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		667B86A2294F56EC001E2D47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		667B86A5294F56EC001E2D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		667B86A7294F56ED001E2D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		667B86AA294F56ED001E2D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		667B86AC294F56ED001E2D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667B86B1294F56ED001E2D47 /* FuzzyExpertSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuzzyExpertSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		667B86B5294F56ED001E2D47 /* FuzzyExpertSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzyExpertSystemTests.swift; sourceTree = "<group>"; };
+		667B86BB294F56ED001E2D47 /* FuzzyExpertSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuzzyExpertSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		667B86BF294F56ED001E2D47 /* FuzzyExpertSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzyExpertSystemUITests.swift; sourceTree = "<group>"; };
+		667B86C1294F56ED001E2D47 /* FuzzyExpertSystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzyExpertSystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		667B86CE294F5726001E2D47 /* Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
+		667B86D0294F5761001E2D47 /* FuzzyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzyTableViewController.swift; sourceTree = "<group>"; };
+		667B86D7294F991A001E2D47 /* FuzzyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzyCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		667B8698294F56EC001E2D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667B86D6294F5902001E2D47 /* RealmSwift in Frameworks */,
+				667B86D4294F5902001E2D47 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667B86AE294F56ED001E2D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667B86B8294F56ED001E2D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		667B8692294F56EC001E2D47 = {
+			isa = PBXGroup;
+			children = (
+				667B869D294F56EC001E2D47 /* FuzzyExpertSystem */,
+				667B86B4294F56ED001E2D47 /* FuzzyExpertSystemTests */,
+				667B86BE294F56ED001E2D47 /* FuzzyExpertSystemUITests */,
+				667B869C294F56EC001E2D47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		667B869C294F56EC001E2D47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				667B869B294F56EC001E2D47 /* FuzzyExpertSystem.app */,
+				667B86B1294F56ED001E2D47 /* FuzzyExpertSystemTests.xctest */,
+				667B86BB294F56ED001E2D47 /* FuzzyExpertSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		667B869D294F56EC001E2D47 /* FuzzyExpertSystem */ = {
+			isa = PBXGroup;
+			children = (
+				667B869E294F56EC001E2D47 /* AppDelegate.swift */,
+				667B86A0294F56EC001E2D47 /* SceneDelegate.swift */,
+				667B86A2294F56EC001E2D47 /* ViewController.swift */,
+				667B86A4294F56EC001E2D47 /* Main.storyboard */,
+				667B86D0294F5761001E2D47 /* FuzzyTableViewController.swift */,
+				667B86D7294F991A001E2D47 /* FuzzyCell.swift */,
+				667B86CE294F5726001E2D47 /* Structures.swift */,
+				667B86A7294F56ED001E2D47 /* Assets.xcassets */,
+				667B86A9294F56ED001E2D47 /* LaunchScreen.storyboard */,
+				667B86AC294F56ED001E2D47 /* Info.plist */,
+			);
+			path = FuzzyExpertSystem;
+			sourceTree = "<group>";
+		};
+		667B86B4294F56ED001E2D47 /* FuzzyExpertSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				667B86B5294F56ED001E2D47 /* FuzzyExpertSystemTests.swift */,
+			);
+			path = FuzzyExpertSystemTests;
+			sourceTree = "<group>";
+		};
+		667B86BE294F56ED001E2D47 /* FuzzyExpertSystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				667B86BF294F56ED001E2D47 /* FuzzyExpertSystemUITests.swift */,
+				667B86C1294F56ED001E2D47 /* FuzzyExpertSystemUITestsLaunchTests.swift */,
+			);
+			path = FuzzyExpertSystemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		667B869A294F56EC001E2D47 /* FuzzyExpertSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667B86C5294F56ED001E2D47 /* Build configuration list for PBXNativeTarget "FuzzyExpertSystem" */;
+			buildPhases = (
+				667B8697294F56EC001E2D47 /* Sources */,
+				667B8698294F56EC001E2D47 /* Frameworks */,
+				667B8699294F56EC001E2D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuzzyExpertSystem;
+			packageProductDependencies = (
+				667B86D3294F5902001E2D47 /* Realm */,
+				667B86D5294F5902001E2D47 /* RealmSwift */,
+			);
+			productName = FuzzyExpertSystem;
+			productReference = 667B869B294F56EC001E2D47 /* FuzzyExpertSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		667B86B0294F56ED001E2D47 /* FuzzyExpertSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667B86C8294F56ED001E2D47 /* Build configuration list for PBXNativeTarget "FuzzyExpertSystemTests" */;
+			buildPhases = (
+				667B86AD294F56ED001E2D47 /* Sources */,
+				667B86AE294F56ED001E2D47 /* Frameworks */,
+				667B86AF294F56ED001E2D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				667B86B3294F56ED001E2D47 /* PBXTargetDependency */,
+			);
+			name = FuzzyExpertSystemTests;
+			productName = FuzzyExpertSystemTests;
+			productReference = 667B86B1294F56ED001E2D47 /* FuzzyExpertSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		667B86BA294F56ED001E2D47 /* FuzzyExpertSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667B86CB294F56ED001E2D47 /* Build configuration list for PBXNativeTarget "FuzzyExpertSystemUITests" */;
+			buildPhases = (
+				667B86B7294F56ED001E2D47 /* Sources */,
+				667B86B8294F56ED001E2D47 /* Frameworks */,
+				667B86B9294F56ED001E2D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				667B86BD294F56ED001E2D47 /* PBXTargetDependency */,
+			);
+			name = FuzzyExpertSystemUITests;
+			productName = FuzzyExpertSystemUITests;
+			productReference = 667B86BB294F56ED001E2D47 /* FuzzyExpertSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		667B8693294F56EC001E2D47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					667B869A294F56EC001E2D47 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					667B86B0294F56ED001E2D47 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 667B869A294F56EC001E2D47;
+					};
+					667B86BA294F56ED001E2D47 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 667B869A294F56EC001E2D47;
+					};
+				};
+			};
+			buildConfigurationList = 667B8696294F56EC001E2D47 /* Build configuration list for PBXProject "FuzzyExpertSystem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 667B8692294F56EC001E2D47;
+			packageReferences = (
+				667B86D2294F5902001E2D47 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 667B869C294F56EC001E2D47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				667B869A294F56EC001E2D47 /* FuzzyExpertSystem */,
+				667B86B0294F56ED001E2D47 /* FuzzyExpertSystemTests */,
+				667B86BA294F56ED001E2D47 /* FuzzyExpertSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		667B8699294F56EC001E2D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667B86AB294F56ED001E2D47 /* LaunchScreen.storyboard in Resources */,
+				667B86A8294F56ED001E2D47 /* Assets.xcassets in Resources */,
+				667B86A6294F56EC001E2D47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667B86AF294F56ED001E2D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667B86B9294F56ED001E2D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		667B8697294F56EC001E2D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667B86A3294F56EC001E2D47 /* ViewController.swift in Sources */,
+				667B869F294F56EC001E2D47 /* AppDelegate.swift in Sources */,
+				667B86A1294F56EC001E2D47 /* SceneDelegate.swift in Sources */,
+				667B86CF294F5726001E2D47 /* Structures.swift in Sources */,
+				667B86D8294F991A001E2D47 /* FuzzyCell.swift in Sources */,
+				667B86D1294F5761001E2D47 /* FuzzyTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667B86AD294F56ED001E2D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667B86B6294F56ED001E2D47 /* FuzzyExpertSystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667B86B7294F56ED001E2D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667B86C2294F56ED001E2D47 /* FuzzyExpertSystemUITestsLaunchTests.swift in Sources */,
+				667B86C0294F56ED001E2D47 /* FuzzyExpertSystemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		667B86B3294F56ED001E2D47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 667B869A294F56EC001E2D47 /* FuzzyExpertSystem */;
+			targetProxy = 667B86B2294F56ED001E2D47 /* PBXContainerItemProxy */;
+		};
+		667B86BD294F56ED001E2D47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 667B869A294F56EC001E2D47 /* FuzzyExpertSystem */;
+			targetProxy = 667B86BC294F56ED001E2D47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		667B86A4294F56EC001E2D47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				667B86A5294F56EC001E2D47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		667B86A9294F56ED001E2D47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				667B86AA294F56ED001E2D47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		667B86C3294F56ED001E2D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		667B86C4294F56ED001E2D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		667B86C6294F56ED001E2D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3BZB3Q66B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FuzzyExpertSystem/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Im.FuzzyExpertSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		667B86C7294F56ED001E2D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3BZB3Q66B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FuzzyExpertSystem/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Im.FuzzyExpertSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		667B86C9294F56ED001E2D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3BZB3Q66B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Im.FuzzyExpertSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuzzyExpertSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FuzzyExpertSystem";
+			};
+			name = Debug;
+		};
+		667B86CA294F56ED001E2D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3BZB3Q66B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Im.FuzzyExpertSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuzzyExpertSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FuzzyExpertSystem";
+			};
+			name = Release;
+		};
+		667B86CC294F56ED001E2D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3BZB3Q66B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Im.FuzzyExpertSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FuzzyExpertSystem;
+			};
+			name = Debug;
+		};
+		667B86CD294F56ED001E2D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3BZB3Q66B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Im.FuzzyExpertSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FuzzyExpertSystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		667B8696294F56EC001E2D47 /* Build configuration list for PBXProject "FuzzyExpertSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667B86C3294F56ED001E2D47 /* Debug */,
+				667B86C4294F56ED001E2D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667B86C5294F56ED001E2D47 /* Build configuration list for PBXNativeTarget "FuzzyExpertSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667B86C6294F56ED001E2D47 /* Debug */,
+				667B86C7294F56ED001E2D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667B86C8294F56ED001E2D47 /* Build configuration list for PBXNativeTarget "FuzzyExpertSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667B86C9294F56ED001E2D47 /* Debug */,
+				667B86CA294F56ED001E2D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667B86CB294F56ED001E2D47 /* Build configuration list for PBXNativeTarget "FuzzyExpertSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667B86CC294F56ED001E2D47 /* Debug */,
+				667B86CD294F56ED001E2D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		667B86D2294F5902001E2D47 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		667B86D3294F5902001E2D47 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 667B86D2294F5902001E2D47 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		667B86D5294F5902001E2D47 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 667B86D2294F5902001E2D47 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 667B8693294F56EC001E2D47 /* Project object */;
+}
